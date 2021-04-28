@@ -2,7 +2,7 @@
 
 Automation project with Java + Gradle on Browser Stack and Github Action as a CI doing remote mobile test, as well I used PageObject and PageFactory. 
 
-![Appium Execution](https://github.com/<OWNER>/<REPOSITORY>/actions/workflows/<WORKFLOW_FILE>/badge.svg)
+![Appium Execution](https://github.com/tassioplima/cocus/workflows/CI/badge.svg)
 
 
 Configuration: 
