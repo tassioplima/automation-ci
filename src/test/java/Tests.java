@@ -20,7 +20,7 @@ public class Tests extends Hooks{
         pageNote.createNote().click();
         pageNote.getAddNote().sendKeys("New note added");
         pageNote.getConfirmationNote().click();
-        assertTrue("New note added", pageNote.getDetailNote().isDisplayed());
+        assertTrue("New note added not avaliable", pageNote.getDetailNote().isDisplayed());
         assertEquals("New note added", pageNote.getDetailNote().getText());
     }
 
@@ -29,6 +29,7 @@ public class Tests extends Hooks{
     public void openStatistics() {
         pageStatic = new PageStatistcs(driver);
         pageStatic.getNavigateUp().click();
-
+        pageStatic.getStatistics().click();
+        assertTrue(pageStatic.getValidateStatic().isDisplayed());
     }
 }

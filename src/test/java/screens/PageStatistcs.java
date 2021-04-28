@@ -18,10 +18,24 @@ public class PageStatistcs extends PageBase{
     @iOSXCUITFindBy(accessibility = "element")
     private MobileElement navegateMenu;
 
+    @AndroidFindBy(id = "design_menu_item_text")
+    @iOSXCUITFindBy(accessibility = "element")
+    private MobileElement statistics;
+
+    @AndroidFindBy(id = "no_statistics_placeholder")
+    @iOSXCUITFindBy(accessibility = "element")
+    private MobileElement validateStatic;
 
     public MobileElement getNavigateUp(){
         return navegateMenu;
     }
 
+    public MobileElement getStatistics(){
+        return statistics;
+    }
+
+    public MobileElement getValidateStatic(){
+        return validateStatic;
+    }
 
 }
