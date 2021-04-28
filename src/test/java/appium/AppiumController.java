@@ -20,25 +20,24 @@ public class AppiumController {
     public static String accessKey = Utils.pathToJSON().getAccessKey();
 
     public static final String server = "https://" + AUTOMATE_USERNAME + ":" + AUTOMATE_ACCESS_KEY + "@hub-cloud.browserstack.com/wd/hub";
-    public static final String local = "https://" + userName + ":" + accessKey + "@hub-cloud.browserstack.com/wd/hub";
+    public static final String local = "http://127.0.0.1:4723/wd/hub";
 
     public static AppiumDriver driver;
 
-
     public void startAppium() throws Exception {
 
-        if (mobile.contains("IOS")){
+        if (mobile.contains("ANDROID")){
+            if (Boolean.getBoolean("EXEC")){
+                driver = new AppiumDriver<MobileElement>(new URL(server), AndroidCapabilities.getAndroidCapabilities());
+            } else {
+                driver = new AppiumDriver<MobileElement>(new URL(local), AndroidCapabilities.getAndroidCapabilitiesLocal());
+            }
+
+        } else if (mobile.contains("IOS")){
             if (Boolean.getBoolean("EXEC")){
                 driver = new AppiumDriver<MobileElement>(new URL(server), iOSCapabilities.getIOSCapabilities());
             } else {
                 driver = new AppiumDriver<MobileElement>(new URL(local), iOSCapabilities.getIOSCapabilities());
-            }
-
-        } else if (mobile.contains("ANDROID")){
-            if (Boolean.getBoolean("EXEC")){
-                driver = new AppiumDriver<MobileElement>(new URL(server), AndroidCapabilities.getAndroidCapabilities());
-            } else {
-                driver = new AppiumDriver<MobileElement>(new URL(local), AndroidCapabilities.getAndroidCapabilities());
             }
         }
 

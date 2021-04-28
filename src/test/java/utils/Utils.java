@@ -21,4 +21,15 @@ public class Utils {
         return null;
     }
 
+    public static JSON pathCapabilitieLocal() {
+        try {
+            Gson gson = new Gson();
+            Type type = new TypeToken<JSON>(){}.getType();
+            return gson.fromJson(new FileReader(new File("src/test/java/jsons/localAndroid.json").getAbsolutePath()), type);
+        } catch (Exception e) {
+            System.out.println("Error archive not found");
+        }
+        return null;
+    }
+
 }

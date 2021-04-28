@@ -5,10 +5,12 @@ public class JSON {
     private String name;
     private String key;
     private String platform;
+    private String appPackage;
+    private String appActivity;
+    private String udid;
     private String [] apps;
     private String [] device;
-    private String []os_version;
-
+    private String [] os_version;
 
     public String getUserName(){
         return name;
@@ -32,5 +34,14 @@ public class JSON {
 
     public String [] getOSVersions(){
         return os_version;
+    }
+    public String getAppPackage(){
+        return appPackage;
+    }
+    public String getAppActivity(){
+        return appActivity;
+    }
+    public String getUdid(){
+        return udid;
     }
 }

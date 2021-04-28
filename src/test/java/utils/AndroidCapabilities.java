@@ -1,5 +1,7 @@
 package utils;
 
+import io.appium.java_client.remote.AndroidMobileCapabilityType;
+import io.appium.java_client.remote.MobileCapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class AndroidCapabilities {
@@ -15,4 +17,13 @@ public class AndroidCapabilities {
         return caps;
     }
 
+    public static DesiredCapabilities getAndroidCapabilitiesLocal(){
+        DesiredCapabilities caps = new DesiredCapabilities();
+        caps.setCapability(AndroidMobileCapabilityType.PLATFORM_NAME,"Android");
+        caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
+        caps.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, Utils.pathCapabilitieLocal().getAppPackage());
+        caps.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, Utils.pathCapabilitieLocal().getAppActivity());
+        caps.setCapability(MobileCapabilityType.UDID,Utils.pathCapabilitieLocal().getUdid() );
+        return caps;
+    }
 }
