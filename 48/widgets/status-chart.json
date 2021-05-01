@@ -1,0 +1,21 @@
+[ {
+  "uid" : "728cd1ab7bb6a828",
+  "name" : "Open statistic",
+  "time" : {
+    "start" : 1619911329894,
+    "stop" : 1619911354138,
+    "duration" : 24244
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "aa888a57519ef723",
+  "name" : "Creating new note",
+  "time" : {
+    "start" : 1619911354274,
+    "stop" : 1619911380719,
+    "duration" : 26445
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
