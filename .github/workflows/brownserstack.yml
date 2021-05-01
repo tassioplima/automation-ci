@@ -30,7 +30,7 @@ jobs:
   allure:
     needs: build
     name: Generate Allure Report
-    if: success()
+    if: always()
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -45,7 +45,7 @@ jobs:
 
       - name: Allure Report action from marketplace
         uses: simple-elf/allure-report-action@master
-        if: success()
+        if: always()
         #id: allure-report
         with:
           allure_results: allure-results
@@ -55,7 +55,7 @@ jobs:
           keep_reports: 20
 
       - name: Deploy report to Github Pages
-        if: success()
+        if: always()
         uses: peaceiris/actions-gh-pages@v2
         env:
           PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
