@@ -1,0 +1,35 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "Tests",
+    "children" : [ {
+      "name" : "openStatistics",
+      "uid" : "e6b3739d889bbcb6",
+      "parentUid" : "fc39173c9dc08e281c680147b63fcad9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1619909819099,
+        "stop" : 1619909843371,
+        "duration" : 24272
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "newNote",
+      "uid" : "8b9fc22a3f80d243",
+      "parentUid" : "fc39173c9dc08e281c680147b63fcad9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1619909843491,
+        "stop" : 1619909867121,
+        "duration" : 23630
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "fc39173c9dc08e281c680147b63fcad9"
+  } ],
+  "name" : "packages"
+}
