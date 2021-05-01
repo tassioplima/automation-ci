@@ -16,8 +16,8 @@ public class AppiumController {
     public static final String AUTOMATE_USERNAME = System.getenv("BROWSERSTACK_USERNAME");
     public static final String AUTOMATE_ACCESS_KEY = System.getenv("BROWSERSTACK_ACCESS_KEY") ;
 
-    public static String userName = Utils.pathToJSON().getUserName();
-    public static String accessKey = Utils.pathToJSON().getAccessKey();
+    public static String userName = Utils.pathCapabilitie().getUserName();
+    public static String accessKey = Utils.pathCapabilitie().getAccessKey();
 
     public static final String server = "https://" + AUTOMATE_USERNAME + ":" + AUTOMATE_ACCESS_KEY + "@hub-cloud.browserstack.com/wd/hub";
     public static final String local = "http://127.0.0.1:4723/wd/hub";
@@ -26,14 +26,14 @@ public class AppiumController {
 
     public void startAppium() throws Exception {
 
-        if (mobile.contains("ANDROID")){
+        if (mobile.toLowerCase().contains("android")){
             if (Boolean.getBoolean("EXEC")){
                 driver = new AppiumDriver<MobileElement>(new URL(server), AndroidCapabilities.getAndroidCapabilities());
             } else {
                 driver = new AppiumDriver<MobileElement>(new URL(local), AndroidCapabilities.getAndroidCapabilitiesLocal());
             }
 
-        } else if (mobile.contains("IOS")){
+        } else if (mobile.toLowerCase().contains("ios")){
             if (Boolean.getBoolean("EXEC")){
                 driver = new AppiumDriver<MobileElement>(new URL(server), iOSCapabilities.getIOSCapabilities());
             } else {

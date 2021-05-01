@@ -10,7 +10,7 @@ import java.lang.reflect.Type;
 
 public class Utils {
 
-    public static JSON pathToJSON() {
+    public static JSON pathCapabilitie() {
         try {
             Gson gson = new Gson();
             Type type = new TypeToken<JSON>(){}.getType();
