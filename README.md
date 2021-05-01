@@ -3,7 +3,7 @@
 Automation project with Java + Gradle on Browser Stack and Github Action as a CI doing remote mobile test, as well I used PageObject and PageFactory. 
 
 ![Appium Execution](https://github.com/tassioplima/cocus/workflows/CI/badge.svg)
-[![Allure Report](https://img.shields.io/badge/Allure%20Report-deployed-yellowgreen)]
+![Allure Report](https://img.shields.io/badge/Allure%20Report-deployed-yellowgreen)
 
 
 Configuration: 
