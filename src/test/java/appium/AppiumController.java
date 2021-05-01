@@ -28,8 +28,10 @@ public class AppiumController {
 
         if (mobile.toLowerCase().contains("android")){
             if (Boolean.getBoolean("EXEC")){
+                System.out.println("AQUI");
                 driver = new AppiumDriver<MobileElement>(new URL(server), AndroidCapabilities.getAndroidCapabilities());
             } else {
+                System.out.println("LOCAL");
                 driver = new AppiumDriver<MobileElement>(new URL(local), AndroidCapabilities.getAndroidCapabilitiesLocal());
             }
 

@@ -5,7 +5,7 @@ import io.appium.java_client.MobileElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Commons {
+public class Commons extends Hooks{
 
     public static void waitForVisibilityElement(MobileElement mobile) {
         WebDriverWait wait = new WebDriverWait(Hooks.driver, 30);
