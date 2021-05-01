@@ -1,6 +1,6 @@
 # Cocus
 
-Automation project with Java + Gradle on Browser Stack and Github Action as a CI doing remote mobile test, as well I used PageObject and PageFactory. 
+Automation project with Java + Gradle on Browser Stack and Github Action as a CI doing remote mobile test using GithubPages to deploy Allure Serve and PageObject and PageFactory. 
 
 ![Appium Execution](https://github.com/tassioplima/cocus/workflows/CI/badge.svg)
 ![Allure Report](https://img.shields.io/badge/Allure%20Report-deployed-yellowgreen)
@@ -47,4 +47,4 @@ false = execution using json name and key from browser stack
 ./gradlew test --tests "Tests" -DMOBILE=ANDROID -DEXEC=false
 ```
 
-Github Pages showing the Allure report:  https://tassioplima.github.io/cocus/
+Github Pages with Allure report results:  https://tassioplima.github.io/cocus/ [ALLURE](https://tassioplima.github.io/cocus/)
