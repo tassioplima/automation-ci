@@ -1,3 +1,4 @@
+import appium.AppiumController;
 import appium.Hooks;
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
