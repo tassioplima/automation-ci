@@ -19,7 +19,6 @@ public class Print extends AppiumController {
         final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
 
         try {
-            System.out.println("VAI TIRA PRINT");
             FileUtils.copyFile(scrFile, (new File("./evidence",  name.getDisplayName() + ".png")));
         } catch (IOException e) {
             e.printStackTrace();
