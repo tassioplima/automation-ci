@@ -47,4 +47,4 @@ false = execution using json name and key from browser stack
 ./gradlew test --tests "Tests" -DMOBILE=ANDROID -DEXEC=false
 ```
 
-Github Pages with Allure report results:[ALLURE](https://tassioplima.github.io/cocus/)
+Github Pages with Allure report results: [ALLURE](https://tassioplima.github.io/cocus/)
