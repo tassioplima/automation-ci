@@ -25,7 +25,6 @@ public class AndroidCapabilities {
         caps.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, Utils.pathCapabilitieLocal().getAppActivity());
         caps.setCapability(MobileCapabilityType.UDID,Utils.pathCapabilitieLocal().getUdid() );
         caps.setCapability("app", Utils.pathCapabilitieLocal().getAppLocal()[0]);
-
         return caps;
     }
 }
