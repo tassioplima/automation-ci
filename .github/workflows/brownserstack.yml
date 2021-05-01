@@ -4,9 +4,7 @@ on:
   push:
    branches-ignore:
       - '!main'
-  pull_request:
-    branches: [ main ]
-
+      
   workflow_dispatch:
 
 jobs:
@@ -24,7 +22,7 @@ jobs:
           key: ${{ runner.os }}-${{ github.workflow }}-${{ hashFiles('**/build.gradle') }}
           restore-keys: |
             ${{ runner.os }}-${{ github.workflow }}-
-      - name: Set up JDK 1.8
+      - name: Set up JDK
         uses: actions/setup-java@v1
         with:
           java-version: 1.8
@@ -32,7 +30,7 @@ jobs:
       - name: Install dependencies
         run: ./gradlew compileTestJava
 
-      - name: 'BrowserStack Env Setup'
+      - name: BrowserStack Env Setup
         uses: browserstack/github-actions/setup-env@master
         with:
           username: ${{ secrets.BROWSERSTACK_USERNAME }}
