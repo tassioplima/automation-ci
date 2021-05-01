@@ -13,7 +13,6 @@ public class Hooks extends AppiumController{
     @AfterEach
     public void tearDown() throws Exception {
       //Print.takeScreenShot(name);
-        System.out.println("DESPOIS TUDO");
         stopAppium();
     }
 
