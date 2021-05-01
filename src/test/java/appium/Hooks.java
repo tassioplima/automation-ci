@@ -1,20 +1,19 @@
 package appium;
 
-import org.junit.Before;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.TestInfo;
-import utils.Print;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 
 public class Hooks extends AppiumController{
 
-    @Before
+    @BeforeEach
     public void setUp() throws Exception {
         startAppium();
     }
 
-    @AfterAll
-    public void tearDown(TestInfo name) throws Exception {
-        Print.takeScreenShot(name);
+    @AfterEach
+    public void tearDown() throws Exception {
+      //Print.takeScreenShot(name);
+        System.out.println("DESPOIS TUDO");
         stopAppium();
     }
 
