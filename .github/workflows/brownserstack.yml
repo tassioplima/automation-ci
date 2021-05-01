@@ -45,14 +45,6 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew test --tests "Tests" -DMOBILE=ANDROID -DEXEC=true
 
-  allure:
-    needs: build
-    name: Generate Allure Report
-    if: always()
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-
       - name: Get Allure history
         uses: actions/checkout@v2
         if: always()
