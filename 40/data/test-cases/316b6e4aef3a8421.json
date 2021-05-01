@@ -1,0 +1,78 @@
+{
+  "uid" : "316b6e4aef3a8421",
+  "name" : "Open statistic",
+  "fullName" : "Tests.openStatistics",
+  "historyId" : "4885b36ff4fc62e60d78859231c42c76",
+  "time" : {
+    "start" : 1619909898184,
+    "stop" : 1619909920341,
+    "duration" : 22157
+  },
+  "description" : "Opened Statistic",
+  "descriptionHtml" : "<p>Opened Statistic</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az209-624"
+  }, {
+    "name" : "thread",
+    "value" : "3073@fv-az209-624.Test worker(9)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "Tests"
+  }, {
+    "name" : "testClass",
+    "value" : "Tests"
+  }, {
+    "name" : "testMethod",
+    "value" : "openStatistics"
+  }, {
+    "name" : "suite",
+    "value" : "Tests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "e6b3739d889bbcb6",
+        "reportUrl" : "https://tassioplima.github.io/cocus/39//#testresult/e6b3739d889bbcb6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619909819099,
+          "stop" : 1619909843371,
+          "duration" : 24272
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "316b6e4aef3a8421.json",
+  "parameterValues" : [ ]
+}

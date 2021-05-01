@@ -1,0 +1,39 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "fv-az209-624",
+    "children" : [ {
+      "name" : "3073@fv-az209-624.Test worker(9)",
+      "children" : [ {
+        "name" : "Creating new note",
+        "uid" : "38c78c677c926f0d",
+        "parentUid" : "da32acf810f393f7ae83d3d4e0516db1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619909920464,
+          "stop" : 1619909946835,
+          "duration" : 26371
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Open statistic",
+        "uid" : "316b6e4aef3a8421",
+        "parentUid" : "da32acf810f393f7ae83d3d4e0516db1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619909898184,
+          "stop" : 1619909920341,
+          "duration" : 22157
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "da32acf810f393f7ae83d3d4e0516db1"
+    } ],
+    "uid" : "b59a68ab3c2ec43536edd274b1f37056"
+  } ],
+  "name" : "timeline"
+}
