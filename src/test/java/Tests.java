@@ -1,4 +1,5 @@
 import appium.Hooks;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import screens.PageNote;
@@ -17,8 +18,8 @@ public class Tests extends Hooks{
         pageNote.createNote().click();
         pageNote.getAddNote().sendKeys("New note added");
         pageNote.getConfirmationNote().click();
-      //  assertTrue("New note added not avaliable", pageNote.getDetailNote().isDisplayed());
-       // assertEquals("New note added", pageNote.getDetailNote().getText());
+        Assertions.assertTrue(pageNote.getDetailNote().isDisplayed());
+        Assertions.assertEquals("New note added", pageNote.getDetailNote().getText());
     }
 
     @Test
@@ -27,6 +28,6 @@ public class Tests extends Hooks{
         pageStatic = new PageStatistcs(driver);
         pageStatic.getNavigateUp().click();
         pageStatic.getStatistics().click();
-      //  assertTrue(pageStatic.getValidateStatic().isDisplayed());
+        Assertions.assertTrue(pageStatic.getValidateStatic().isDisplayed());
     }
 }
