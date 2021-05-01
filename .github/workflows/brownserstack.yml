@@ -43,6 +43,14 @@ jobs:
         run: ./gradlew test --tests "Tests" -DMOBILE=ANDROID -DEXEC=true
         continue-on-error: true
 
+  allure:
+    needs: build
+    name: Generate Allure Report
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+     
       - name: Get Allure history
         uses: actions/checkout@v2
         if: always()
@@ -67,4 +75,4 @@ jobs:
         env:
           PERSONAL_TOKEN: ${{ secrets.TOKEN }}
           PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: allure-history
+          PUBLISH_DIR: allure-history     
