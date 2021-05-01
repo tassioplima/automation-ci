@@ -1,28 +1,4 @@
 [ {
-  "buildOrder" : 37,
-  "reportUrl" : "https://tassioplima.github.io/cocus/37/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "run" : 2,
-    "retry" : 0
-  }
-}, {
-  "buildOrder" : 36,
-  "reportUrl" : "https://tassioplima.github.io/cocus/36/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "run" : 2,
-    "retry" : 0
-  }
-}, {
-  "buildOrder" : 35,
-  "reportUrl" : "https://tassioplima.github.io/cocus/35/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "run" : 2,
-    "retry" : 0
-  }
-}, {
   "data" : {
     "run" : 0,
     "retry" : 0
