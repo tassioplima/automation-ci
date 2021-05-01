@@ -28,6 +28,7 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew test --tests "Tests" -DMOBILE=ANDROID -DEXEC=true
   allure:
+    needs: build
     name: Generate Allure Report
     if: success()
     runs-on: ubuntu-latest
