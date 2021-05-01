@@ -11,6 +11,7 @@ public class JSON {
     private String [] apps;
     private String [] device;
     private String [] os_version;
+    private String [] appLocal;
 
     public String getUserName(){
         return name;
@@ -43,5 +44,8 @@ public class JSON {
     }
     public String getUdid(){
         return udid;
+    }
+    public String [] getAppLocal(){
+        return appLocal;
     }
 }

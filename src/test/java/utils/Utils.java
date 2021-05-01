@@ -14,7 +14,7 @@ public class Utils {
         try {
             Gson gson = new Gson();
             Type type = new TypeToken<JSON>(){}.getType();
-            return gson.fromJson(new FileReader(new File("src/test/java/jsons/data.json").getAbsolutePath()), type);
+            return gson.fromJson(new FileReader(new File("src/test/java/jsons/remote.json").getAbsolutePath()), type);
         } catch (Exception e) {
             System.out.println("Error archive not found");
         }
@@ -25,7 +25,7 @@ public class Utils {
         try {
             Gson gson = new Gson();
             Type type = new TypeToken<JSON>(){}.getType();
-            return gson.fromJson(new FileReader(new File("src/test/java/jsons/localAndroid.json").getAbsolutePath()), type);
+            return gson.fromJson(new FileReader(new File("src/test/java/jsons/local.json").getAbsolutePath()), type);
         } catch (Exception e) {
             System.out.println("Error archive not found");
         }

@@ -37,7 +37,7 @@ public class AppiumController {
             if (Boolean.getBoolean("EXEC")){
                 driver = new AppiumDriver<MobileElement>(new URL(server), iOSCapabilities.getIOSCapabilities());
             } else {
-                driver = new AppiumDriver<MobileElement>(new URL(local), iOSCapabilities.getIOSCapabilities());
+                driver = new AppiumDriver<MobileElement>(new URL(local), iOSCapabilities.getIOSCapabilitiesLocal());
             }
         }
 
