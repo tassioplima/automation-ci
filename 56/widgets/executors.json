@@ -1,0 +1,10 @@
+[ {
+  "name" : "GitHub Actions",
+  "type" : "github",
+  "url" : "https://tassioplima.github.io/cocus",
+  "buildOrder" : 56,
+  "buildName" : "GitHub Actions Run #803598459",
+  "buildUrl" : "https://github.com/tassioplima/cocus/actions/runs/803598459",
+  "reportName" : "Allure Report with history",
+  "reportUrl" : "https://tassioplima.github.io/cocus/56/"
+} ]

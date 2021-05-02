@@ -1,0 +1,158 @@
+{
+  "uid" : "b968b1f9cafd48b5",
+  "name" : "Open statistic",
+  "fullName" : "Tests.openStatistics",
+  "historyId" : "4885b36ff4fc62e60d78859231c42c76",
+  "time" : {
+    "start" : 1619930473403,
+    "stop" : 1619930500781,
+    "duration" : 27378
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1619930473435,
+      "stop" : 1619930495055,
+      "duration" : 21620
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1619930498185,
+      "stop" : 1619930500771,
+      "duration" : 2586
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "a03fff84197ec1dc",
+      "name" : "Screenshot",
+      "source" : "a03fff84197ec1dc.png",
+      "type" : "image/png",
+      "size" : 40207
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az210-368"
+  }, {
+    "name" : "thread",
+    "value" : "2942@fv-az210-368.ForkJoinPool-1-worker-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "Tests"
+  }, {
+    "name" : "testClass",
+    "value" : "Tests"
+  }, {
+    "name" : "testMethod",
+    "value" : "openStatistics"
+  }, {
+    "name" : "suite",
+    "value" : "Tests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 7,
+        "unknown" : 0,
+        "total" : 7
+      },
+      "items" : [ {
+        "uid" : "792ee745ee9d82b3",
+        "reportUrl" : "https://tassioplima.github.io/cocus/55//#testresult/792ee745ee9d82b3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619929058021,
+          "stop" : 1619929082399,
+          "duration" : 24378
+        }
+      }, {
+        "uid" : "1f812de7b7afba81",
+        "reportUrl" : "https://tassioplima.github.io/cocus/54//#testresult/1f812de7b7afba81",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619923833503,
+          "stop" : 1619923860151,
+          "duration" : 26648
+        }
+      }, {
+        "uid" : "df93b832a75e499e",
+        "reportUrl" : "https://tassioplima.github.io/cocus/51//#testresult/df93b832a75e499e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619922202758,
+          "stop" : 1619922225673,
+          "duration" : 22915
+        }
+      }, {
+        "uid" : "2b1b29e527ce9a31",
+        "reportUrl" : "https://tassioplima.github.io/cocus/50//#testresult/2b1b29e527ce9a31",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619920608610,
+          "stop" : 1619920632423,
+          "duration" : 23813
+        }
+      }, {
+        "uid" : "e3eebb9c6b66f8a",
+        "reportUrl" : "https://tassioplima.github.io/cocus/49//#testresult/e3eebb9c6b66f8a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619912713415,
+          "stop" : 1619912735689,
+          "duration" : 22274
+        }
+      }, {
+        "uid" : "728cd1ab7bb6a828",
+        "reportUrl" : "https://tassioplima.github.io/cocus/48//#testresult/728cd1ab7bb6a828",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619911329894,
+          "stop" : 1619911354138,
+          "duration" : 24244
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "b968b1f9cafd48b5.json",
+  "parameterValues" : [ ]
+}
