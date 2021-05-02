@@ -11,13 +11,11 @@ public class Hooks extends AppiumController{
     @BeforeEach
     public void setUp(TestInfo info) throws Exception {
         startAppium();
-        Allure.description(info.getDisplayName());
     }
 
     @AfterEach
     public void tearDown(TestInfo info) throws Exception {
       Print.takeScreenShot(info);
-      Allure.description(info.getDisplayName());
       stopAppium();
     }
 
