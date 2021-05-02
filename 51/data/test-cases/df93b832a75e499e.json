@@ -1,0 +1,131 @@
+{
+  "uid" : "df93b832a75e499e",
+  "name" : "Open statistic",
+  "fullName" : "Tests.openStatistics",
+  "historyId" : "4885b36ff4fc62e60d78859231c42c76",
+  "time" : {
+    "start" : 1619922202758,
+    "stop" : 1619922225673,
+    "duration" : 22915
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1619922202790,
+      "stop" : 1619922221264,
+      "duration" : 18474
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1619922224207,
+      "stop" : 1619922225665,
+      "duration" : 1458
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "13b2fe2b83d8ee15",
+      "name" : "Screenshot",
+      "source" : "13b2fe2b83d8ee15.txt",
+      "type" : "text/plain",
+      "size" : 4
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az183-611"
+  }, {
+    "name" : "thread",
+    "value" : "3089@fv-az183-611.ForkJoinPool-1-worker-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "Tests"
+  }, {
+    "name" : "testClass",
+    "value" : "Tests"
+  }, {
+    "name" : "testMethod",
+    "value" : "openStatistics"
+  }, {
+    "name" : "suite",
+    "value" : "Tests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "2b1b29e527ce9a31",
+        "reportUrl" : "https://tassioplima.github.io/cocus/50//#testresult/2b1b29e527ce9a31",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619920608610,
+          "stop" : 1619920632423,
+          "duration" : 23813
+        }
+      }, {
+        "uid" : "e3eebb9c6b66f8a",
+        "reportUrl" : "https://tassioplima.github.io/cocus/49//#testresult/e3eebb9c6b66f8a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619912713415,
+          "stop" : 1619912735689,
+          "duration" : 22274
+        }
+      }, {
+        "uid" : "728cd1ab7bb6a828",
+        "reportUrl" : "https://tassioplima.github.io/cocus/48//#testresult/728cd1ab7bb6a828",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619911329894,
+          "stop" : 1619911354138,
+          "duration" : 24244
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "df93b832a75e499e.json",
+  "parameterValues" : [ ]
+}
