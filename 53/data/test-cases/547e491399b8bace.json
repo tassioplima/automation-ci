@@ -1,0 +1,113 @@
+{
+  "uid" : "547e491399b8bace",
+  "name" : "Creating new note",
+  "fullName" : "Tests.newNote",
+  "historyId" : "5cf54b4e811ce804943ab8b09c8bbab3",
+  "time" : {
+    "start" : 1619923609407,
+    "stop" : 1619923636892,
+    "duration" : 27485
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1619923609408,
+      "stop" : 1619923626836,
+      "duration" : 17428
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1619923634332,
+      "stop" : 1619923636892,
+      "duration" : 2560
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "5c2706faff82d845",
+      "name" : "Screenshot",
+      "source" : "5c2706faff82d845.png",
+      "type" : "image/png",
+      "size" : 49175
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az133-393"
+  }, {
+    "name" : "thread",
+    "value" : "2972@fv-az133-393.ForkJoinPool-1-worker-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "Tests"
+  }, {
+    "name" : "testClass",
+    "value" : "Tests"
+  }, {
+    "name" : "testMethod",
+    "value" : "newNote"
+  }, {
+    "name" : "suite",
+    "value" : "Tests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "2a74f6dc056830f9",
+        "reportUrl" : "https://tassioplima.github.io/cocus/52//#testresult/2a74f6dc056830f9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619923142817,
+          "stop" : 1619923168683,
+          "duration" : 25866
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "547e491399b8bace.json",
+  "parameterValues" : [ ]
+}
