@@ -11,6 +11,7 @@ public class Hooks extends AppiumController{
     @BeforeEach
     public void setUp(TestInfo info) throws Exception {
         startAppium();
+        Allure.description(info.getDisplayName());
     }
 
     @AfterEach
