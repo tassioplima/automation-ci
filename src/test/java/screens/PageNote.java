@@ -34,23 +34,24 @@ public class PageNote extends PageBase{
     @iOSXCUITFindBy(accessibility = "element")
     private MobileElement detailNote;
 
-    public MobileElement createNote(){
-        return createNote;
+
+    public void createNewNode(){
+        createNote.click();
     }
 
-    public MobileElement getToobarNewnote(){
-        return toobarNewnote;
+    public void addNewNote(String value){
+        addNote.sendKeys(value);
     }
 
-    public MobileElement getAddNote(){
-        return addNote;
+    public void confirmNote(){
+        confirmationNote.click();
     }
 
-    public MobileElement getDetailNote(){
-        return detailNote;
+    public String validationStringNote(){
+        return detailNote.getText();
     }
 
-    public MobileElement getConfirmationNote(){
-        return confirmationNote;
+    public boolean validationNotes(){
+        return detailNote.isDisplayed();
     }
 }

@@ -26,16 +26,16 @@ public class PageStatistcs extends PageBase{
     @iOSXCUITFindBy(accessibility = "element")
     private MobileElement validateStatic;
 
-    public MobileElement getNavigateUp(){
-        return navegateMenu;
+    public void openMenu(){
+        navegateMenu.click();
     }
 
-    public MobileElement getStatistics(){
-        return statistics;
+    public void openStatistics(){
+        statistics.click();
     }
 
-    public MobileElement getValidateStatic(){
-        return validateStatic;
+    public boolean validationStatic(){
+        return validateStatic.isDisplayed();
     }
 
 }

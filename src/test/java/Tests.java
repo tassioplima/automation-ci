@@ -14,19 +14,19 @@ public class Tests extends Hooks{
     @DisplayName("Creating new note")
     public void newNote() {
         pageNote = new PageNote(driver);
-        pageNote.createNote().click();
-        pageNote.getAddNote().sendKeys("New note added");
-        pageNote.getConfirmationNote().click();
-        Assertions.assertTrue(pageNote.getDetailNote().isDisplayed());
-        Assertions.assertEquals("New note added", pageNote.getDetailNote().getText());
+        pageNote.createNewNode();
+        pageNote.addNewNote("New note added");
+        pageNote.confirmNote();
+        Assertions.assertTrue(pageNote.validationNotes());
+        Assertions.assertEquals("New note added", pageNote.validationStringNote());
     }
 
     @Test
     @DisplayName("Open statistic")
     public void openStatistics() {
         pageStatic = new PageStatistcs(driver);
-        pageStatic.getNavigateUp().click();
-        pageStatic.getStatistics().click();
-        Assertions.assertTrue(pageStatic.getValidateStatic().isDisplayed());
+        pageStatic.openMenu();
+        pageStatic.openStatistics();
+        Assertions.assertTrue(pageStatic.validationStatic());
     }
 }
