@@ -2,6 +2,7 @@ import appium.Hooks;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInfo;
 import screens.PageNote;
 import screens.PageStatistcs;
 import io.qameta.allure.Allure;
@@ -22,8 +23,6 @@ public class Tests extends Hooks{
         pageNote.getConfirmationNote().click();
         Assertions.assertTrue(pageNote.getDetailNote().isDisplayed());
         Assertions.assertEquals("New note added", pageNote.getDetailNote().getText());
-        Allure.description("Created new note");
-        Print.allureScreenShot();
     }
 
     @Test
@@ -33,7 +32,5 @@ public class Tests extends Hooks{
         pageStatic.getNavigateUp().click();
         pageStatic.getStatistics().click();
         Assertions.assertTrue(pageStatic.getValidateStatic().isDisplayed());
-        Allure.description("Opened Statistic");
-        Print.allureScreenShot();
     }
 }

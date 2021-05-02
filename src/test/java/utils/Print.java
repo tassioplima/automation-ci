@@ -2,6 +2,7 @@ package utils;
 
 import appium.AppiumController;
 import appium.Hooks;
+import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.DisplayName;
@@ -14,20 +15,17 @@ import java.io.IOException;
 
 public class Print extends AppiumController {
 
-    public static void takeScreenShot(TestInfo name) {
+    @Attachment("Screenshot")
+    public static void takeScreenShot(TestInfo info) {
 
         File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
 
         try {
-            FileUtils.copyFile(scrFile, (new File("./evidence",  name.getDisplayName() + ".png")));
+            FileUtils.copyFile(scrFile, (new File("./evidence", info.getDisplayName() + ".png")));
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    @Attachment(value = "Name", type = "image/png")
-    public static void allureScreenShot(){
-        ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-    }
 }
