@@ -16,21 +16,23 @@ public class Tests extends Hooks{
 
     @Test
     @DisplayName("Creating new note")
-    public void newNote() {
+    public void newNote(TestInfo info) {
         pageNote = new PageNote(driver);
         pageNote.createNote().click();
         pageNote.getAddNote().sendKeys("New note added");
         pageNote.getConfirmationNote().click();
         Assertions.assertTrue(pageNote.getDetailNote().isDisplayed());
         Assertions.assertEquals("New note added", pageNote.getDetailNote().getText());
+        Allure.description(info.getDisplayName());
     }
 
     @Test
     @DisplayName("Open statistic")
-    public void openStatistics() {
+    public void openStatistics(TestInfo info) {
         pageStatic = new PageStatistcs(driver);
         pageStatic.getNavigateUp().click();
         pageStatic.getStatistics().click();
         Assertions.assertTrue(pageStatic.getValidateStatic().isDisplayed());
+        Allure.description(info.getDisplayName());
     }
 }

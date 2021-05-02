@@ -15,17 +15,22 @@ import java.io.IOException;
 
 public class Print extends AppiumController {
 
-    @Attachment("Screenshot")
     public static void takeScreenShot(TestInfo info) {
 
         File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
 
         try {
+            screenShot();
             FileUtils.copyFile(scrFile, (new File("./evidence", info.getDisplayName() + ".png")));
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    @Attachment(value = "Screenshot", type = "image/png")
+    public static byte[] screenShot(){
+        return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
     }
 
 }
