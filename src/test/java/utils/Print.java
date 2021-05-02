@@ -2,6 +2,7 @@ package utils;
 
 import appium.AppiumController;
 import appium.Hooks;
+import io.qameta.allure.Attachment;
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.TestInfo;
@@ -23,5 +24,10 @@ public class Print extends AppiumController {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    @Attachment(value = "Name", type = "image/png")
+    public static void allureScreenShot(){
+        ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
     }
 }

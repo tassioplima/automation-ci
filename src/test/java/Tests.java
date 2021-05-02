@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import screens.PageNote;
 import screens.PageStatistcs;
 import io.qameta.allure.Allure;
+import utils.Print;
 
 
 public class Tests extends Hooks{
@@ -22,6 +23,7 @@ public class Tests extends Hooks{
         Assertions.assertTrue(pageNote.getDetailNote().isDisplayed());
         Assertions.assertEquals("New note added", pageNote.getDetailNote().getText());
         Allure.description("Created new note");
+        Print.allureScreenShot();
     }
 
     @Test
@@ -32,5 +34,6 @@ public class Tests extends Hooks{
         pageStatic.getStatistics().click();
         Assertions.assertTrue(pageStatic.getValidateStatic().isDisplayed());
         Allure.description("Opened Statistic");
+        Print.allureScreenShot();
     }
 }
