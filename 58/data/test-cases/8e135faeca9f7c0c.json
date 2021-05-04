@@ -1,0 +1,113 @@
+{
+  "uid" : "8e135faeca9f7c0c",
+  "name" : "Open statistic",
+  "fullName" : "Tests.openStatistics",
+  "historyId" : "4885b36ff4fc62e60d78859231c42c76",
+  "time" : {
+    "start" : 1620142318895,
+    "stop" : 1620142342038,
+    "duration" : 23143
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1620142318929,
+      "stop" : 1620142337276,
+      "duration" : 18347
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1620142339980,
+      "stop" : 1620142342026,
+      "duration" : 2046
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "4f1555662c80671c",
+      "name" : "Screenshot",
+      "source" : "4f1555662c80671c.png",
+      "type" : "image/png",
+      "size" : 40501
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az167-737"
+  }, {
+    "name" : "thread",
+    "value" : "2989@fv-az167-737.ForkJoinPool-1-worker-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "Tests"
+  }, {
+    "name" : "testClass",
+    "value" : "Tests"
+  }, {
+    "name" : "testMethod",
+    "value" : "openStatistics"
+  }, {
+    "name" : "suite",
+    "value" : "Tests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "a83ea776c441f97",
+        "reportUrl" : "https://tassioplima.github.io/cocus/58//#testresult/a83ea776c441f97",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620054954534,
+          "stop" : 1620054978902,
+          "duration" : 24368
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "8e135faeca9f7c0c.json",
+  "parameterValues" : [ ]
+}
