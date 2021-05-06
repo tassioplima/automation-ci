@@ -1,4 +1,4 @@
-# Cocus
+# Automation Project
 
 Automation project with Java (Language) + Gradle (Dependency) on Browser Stack (Device Farm) and Github Action (CI) doing remote mobile test, GithubPages to deploy Allure Serve to see test result, PageObject/Screen and PageFactory as a structure. 
 
