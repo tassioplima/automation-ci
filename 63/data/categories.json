@@ -1,0 +1,43 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Unable to create a new remote session. Please check the server log for more details. Original error: [BROWSERSTACK_INVALID_APP_URL] The app_url specified in the 'app' capability in your test is invalid. Please specify a valid app_url that was returned in the response to upload app API request and try again. (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 825 milliseconds\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az183-25', ip: '10.1.0.193', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '1.8.0_302'\nDriver info: driver.version: AppiumDriver\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az183-25', ip: '10.1.0.193', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '1.8.0_302'\nDriver info: driver.version: AppiumDriver",
+      "children" : [ {
+        "name" : "Open statistic",
+        "uid" : "b7deecea8812b233",
+        "parentUid" : "44d78bb1cf81a770f2b41b7b0a070612",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628688918805,
+          "stop" : 1628688920269,
+          "duration" : 1464
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "44d78bb1cf81a770f2b41b7b0a070612"
+    }, {
+      "name" : "Unable to create a new remote session. Please check the server log for more details. Original error: [BROWSERSTACK_INVALID_APP_URL] The app_url specified in the 'app' capability in your test is invalid. Please specify a valid app_url that was returned in the response to upload app API request and try again. (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 492 milliseconds\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az183-25', ip: '10.1.0.193', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '1.8.0_302'\nDriver info: driver.version: AppiumDriver\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az183-25', ip: '10.1.0.193', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '1.8.0_302'\nDriver info: driver.version: AppiumDriver",
+      "children" : [ {
+        "name" : "Creating new note",
+        "uid" : "eabf0eda01a2caf9",
+        "parentUid" : "3af39ad2f6667c19bf6b1522a96f286f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628688920398,
+          "stop" : 1628688920910,
+          "duration" : 512
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3af39ad2f6667c19bf6b1522a96f286f"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
