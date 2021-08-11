@@ -1,0 +1,43 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Can't locate an element by this strategy: By.chained({By.AccessibilityId: Navigate up})",
+      "children" : [ {
+        "name" : "Open statistic",
+        "uid" : "c7086d48b6e5b60a",
+        "parentUid" : "5589d159c217d6461a84e0dfac7d2bb9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628689243009,
+          "stop" : 1628689271719,
+          "duration" : 28710
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5589d159c217d6461a84e0dfac7d2bb9"
+    }, {
+      "name" : "Can't locate an element by this strategy: By.chained({By.id: fab_add_notes})",
+      "children" : [ {
+        "name" : "Creating new note",
+        "uid" : "9008d40d0697a641",
+        "parentUid" : "b75d7da00415bed1690566ed5f841257",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628689271814,
+          "stop" : 1628689298725,
+          "duration" : 26911
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b75d7da00415bed1690566ed5f841257"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
