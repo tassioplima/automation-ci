@@ -7,6 +7,7 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import utils.AndroidCapabilities;
 import utils.Utils;
+import utils.ValuesEnum;
 import utils.iOSCapabilities;
 
 public class AppiumController {
@@ -26,15 +27,15 @@ public class AppiumController {
 
     public void startAppium() throws Exception {
 
-        if (mobile.toLowerCase().contains("android")){
-            if (Boolean.getBoolean("EXEC")){
+        if (ValuesEnum.MOBILE.getEnv().toLowerCase().contains("android")){
+            if (ValuesEnum.BOOLENV.getBool()){
                 driver = new AppiumDriver<MobileElement>(new URL(server), AndroidCapabilities.getAndroidCapabilities());
             } else {
                 driver = new AppiumDriver<MobileElement>(new URL(local), AndroidCapabilities.getAndroidCapabilitiesLocal());
             }
 
-        } else if (mobile.toLowerCase().contains("ios")){
-            if (Boolean.getBoolean("EXEC")){
+        } else if (ValuesEnum.MOBILE.getEnv().toLowerCase().contains("ios")){
+            if (ValuesEnum.BOOLENV.getBool()){
                 driver = new AppiumDriver<MobileElement>(new URL(server), iOSCapabilities.getIOSCapabilities());
             } else {
                 driver = new AppiumDriver<MobileElement>(new URL(local), iOSCapabilities.getIOSCapabilitiesLocal());
