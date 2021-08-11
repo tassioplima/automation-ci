@@ -12,8 +12,6 @@ import utils.iOSCapabilities;
 
 public class AppiumController {
 
-    String mobile = System.getProperty("MOBILE");
-
     public static final String AUTOMATE_USERNAME = System.getenv("BROWSERSTACK_USERNAME");
     public static final String AUTOMATE_ACCESS_KEY = System.getenv("BROWSERSTACK_ACCESS_KEY") ;
 
