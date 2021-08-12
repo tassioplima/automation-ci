@@ -3,7 +3,11 @@ package utils;
 public enum ValuesEnum {
 
     MOBILE(System.getProperty("MOBILE")),
-    BOOLENV(Boolean.getBoolean("EXEC"))
+    BOOLENV(Boolean.getBoolean("EXEC")),
+    AUTOMATE_USERNAME(System.getenv("BROWSERSTACK_USERNAME")),
+    AUTOMATE_ACCESS_KEY(System.getenv("BROWSERSTACK_ACCESS_KEY")),
+    LOCAL_USERNAME(Utils.pathCapabilitie().getUserName()),
+    LOCAL_ACCESS_KEY(Utils.pathCapabilitie().getAccessKey()),
     ;
 
     private boolean bool;
