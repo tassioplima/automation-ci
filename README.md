@@ -14,7 +14,6 @@ Configuration:
 - Appium Server
 - Browser Stack Account and Keys
 
-
 Running:
 
 ```
