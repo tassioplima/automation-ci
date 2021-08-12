@@ -1,6 +1,6 @@
 package utils;
 
-public enum ValuesEnum {
+public enum Env {
 
     MOBILE(System.getProperty("MOBILE")),
     BOOLENV(Boolean.getBoolean("EXEC")),
@@ -13,11 +13,11 @@ public enum ValuesEnum {
     private boolean bool;
     private String env;
 
-    ValuesEnum (String env){
+    Env(String env){
         this.env = env;
     }
 
-    ValuesEnum (boolean bool){
+    Env(boolean bool){
         this.bool = bool;
     }
 
