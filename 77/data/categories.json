@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Can't locate an element by this strategy: By.chained({By.AccessibilityId: Navigate up})",
+      "children" : [ {
+        "name" : "Open statistic",
+        "uid" : "ceba4a10e7a2d3ce",
+        "parentUid" : "5589d159c217d6461a84e0dfac7d2bb9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628869381912,
+          "stop" : 1628869404761,
+          "duration" : 22849
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5589d159c217d6461a84e0dfac7d2bb9"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
