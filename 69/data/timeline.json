@@ -1,0 +1,39 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "fv-az177-688",
+    "children" : [ {
+      "name" : "2938@fv-az177-688.ForkJoinPool-1-worker-1(12)",
+      "children" : [ {
+        "name" : "Creating new note",
+        "uid" : "7a37497c2e40b423",
+        "parentUid" : "7608805c2cb87e49cf42739e92e1308a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628862932958,
+          "stop" : 1628862958784,
+          "duration" : 25826
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Open statistic",
+        "uid" : "e841c38c85208bb0",
+        "parentUid" : "7608805c2cb87e49cf42739e92e1308a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628862907675,
+          "stop" : 1628862932834,
+          "duration" : 25159
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7608805c2cb87e49cf42739e92e1308a"
+    } ],
+    "uid" : "b5a008f102f768ac8b3b5b7f07df50cc"
+  } ],
+  "name" : "timeline"
+}
