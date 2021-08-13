@@ -4,6 +4,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import screens.PageNote;
 import screens.PageStatistcs;
+import utils.Utils;
 
 public class Tests extends Hooks{
 
@@ -17,6 +18,7 @@ public class Tests extends Hooks{
         pageNote.createNewNode();
         pageNote.addNewNote("New note added");
         pageNote.confirmNote();
+        System.out.println( "SYS OUT TEST "+ Utils.pathCapabilitie().getEnvironment()[0].getDevices() +"  " + "  "+ Utils.pathCapabilitie().getEnvironment()[0].getOSVersions() );
         Assertions.assertTrue(pageNote.validationNotes());
         Assertions.assertEquals("New note added", pageNote.validationStringNote());
     }
@@ -27,6 +29,7 @@ public class Tests extends Hooks{
         pageStatic = new PageStatistcs(driver);
         pageStatic.openMenu();
         pageStatic.openStatistics();
+        System.out.println( "SYS OUT TEST "+ Utils.pathCapabilitie().getEnvironment()[0].getDevices() +"  " + "  "+ Utils.pathCapabilitie().getEnvironment()[0].getOSVersions() );
         Assertions.assertTrue(pageStatic.validationStatic());
     }
 }
