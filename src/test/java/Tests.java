@@ -14,7 +14,6 @@ public class Tests extends Hooks{
     @DisplayName("Creating new note")
     public void newNote() {
         pageNote = new PageNote(driver);
-        System.out.println("TESTANDO LOG");
         pageNote.createNewNode();
         pageNote.addNewNote("New note added");
         pageNote.confirmNote();

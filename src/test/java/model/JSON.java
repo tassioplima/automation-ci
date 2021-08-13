@@ -46,6 +46,7 @@ public class JSON {
     public String getAppPackage(){
         return appPackage;
     }
+
     public String getAppActivity(){
         return appActivity;
     }

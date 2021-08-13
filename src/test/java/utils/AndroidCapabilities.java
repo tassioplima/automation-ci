@@ -16,11 +16,6 @@ public class AndroidCapabilities {
         caps.setCapability("app", Utils.pathCapabilitie().getApps()[0]);
         caps.setCapability("browserstack.video", false);
         caps.setCapability("browserstack.debug", true);
-       /* caps.setCapability("environments.device", Utils.pathCapabilitie().getEnvironment()[0].getDevices());
-        caps.setCapability("environments.os_", Utils.pathCapabilitie().getEnvironment()[0].getOSVersions());
-        caps.setCapability("environments", Utils.pathCapabilitie().getEnvironment()[1].getDevices());
-        caps.setCapability("environments", Utils.pathCapabilitie().getEnvironment()[1].getOSVersions());
-        */
         return caps;
     }
 
