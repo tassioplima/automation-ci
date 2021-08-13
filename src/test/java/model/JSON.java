@@ -12,6 +12,8 @@ public class JSON {
     private String [] device;
     private String [] os_version;
     private String [] appLocal;
+    private Environments[] environments;
+
 
     public String getUserName(){
         return name;
@@ -27,6 +29,10 @@ public class JSON {
 
     public String[] getApps() {
         return apps;
+    }
+
+    public Environments[] getEnvironment(){
+        return environments;
     }
 
     public String [] getDevices(){
