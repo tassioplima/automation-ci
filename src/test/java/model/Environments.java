@@ -2,14 +2,14 @@ package model;
 
 public class Environments {
 
-    private String [] device;
-    private String [] os_version;
+    private String device;
+    private String os_version;
 
-    public String [] getDevices(){
+    public String getDevices(){
         return device;
     }
 
-    public String [] getOSVersions(){
+    public String getOSVersions(){
         return os_version;
     }
 }
