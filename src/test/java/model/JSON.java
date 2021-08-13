@@ -36,15 +36,18 @@ public class JSON {
     public String [] getOSVersions(){
         return os_version;
     }
+
     public String getAppPackage(){
         return appPackage;
     }
     public String getAppActivity(){
         return appActivity;
     }
+
     public String getUdid(){
         return udid;
     }
+
     public String [] getAppLocal(){
         return appLocal;
     }
