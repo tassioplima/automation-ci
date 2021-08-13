@@ -18,7 +18,12 @@ public class Tests extends Hooks{
         pageNote.createNewNode();
         pageNote.addNewNote("New note added");
         pageNote.confirmNote();
-        System.out.println( "SYS OUT TEST "+ Utils.pathCapabilitie().getEnvironment()[0].getDevices() +"  " + "  "+ Utils.pathCapabilitie().getEnvironment()[0].getOSVersions() );
+        try {
+            System.out.println( "SYS OUT TEST "+ Utils.pathCapabilitie().getEnvironment()[0].getDevices() +"  " + "  "+ Utils.pathCapabilitie().getEnvironment()[0].getOSVersions() );
+
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+        }
         Assertions.assertTrue(pageNote.validationNotes());
         Assertions.assertEquals("New note added", pageNote.validationStringNote());
     }
@@ -29,7 +34,11 @@ public class Tests extends Hooks{
         pageStatic = new PageStatistcs(driver);
         pageStatic.openMenu();
         pageStatic.openStatistics();
-        System.out.println( "SYS OUT TEST "+ Utils.pathCapabilitie().getEnvironment()[0].getDevices() +"  " + "  "+ Utils.pathCapabilitie().getEnvironment()[0].getOSVersions() );
-        Assertions.assertTrue(pageStatic.validationStatic());
+        try {
+            System.out.println( "SYS OUT TEST "+ Utils.pathCapabilitie().getEnvironment()[0].getDevices() +"  " + "  "+ Utils.pathCapabilitie().getEnvironment()[0].getOSVersions() );
+
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+        }        Assertions.assertTrue(pageStatic.validationStatic());
     }
 }
