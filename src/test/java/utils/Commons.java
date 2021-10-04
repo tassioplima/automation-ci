@@ -32,7 +32,7 @@ public class Commons extends AppiumController {
         wait.until(ExpectedConditions.invisibilityOf(mobile));
     }
     
-      /*
+     /*
      * Automation method for scrolling down only
      */
     public void scrollDown() {
