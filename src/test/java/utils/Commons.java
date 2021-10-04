@@ -11,7 +11,7 @@ import io.appium.java_client.*;
 
 public class Commons extends AppiumController {
     
-    public static final int DEFAULT_TIMEOUT = 25;
+    public static final int DEFAULT_SCROLL_COUNT = 15;
 
     public static void waitForVisibilityElement(MobileElement mobile) {
         WebDriverWait wait = new WebDriverWait(driver, 30);
