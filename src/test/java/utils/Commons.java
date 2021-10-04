@@ -27,5 +27,61 @@ public class Commons extends AppiumController {
         WebDriverWait wait = new WebDriverWait(driver, time);
         wait.until(ExpectedConditions.invisibilityOf(mobile));
     }
+    
+     /*
+
+     * Automation method for scroll only by Mobile Element
+
+     *
+
+     * @param element MobileElement of element
+
+     */
+
+    public void scrollAndFindElement(MobileElement element) {
+
+        int limit = 0;
+
+        while (!elementIsDisplayed(element)){
+
+            limit ++;
+
+            scrollDown();
+
+            if (limit >= DEFAULT_SCROLL_COUNT){
+
+                break;
+
+            }
+
+        }
+
+    }
+    
+    /*
+
+     * Automation method to return boolean if the element is displayed
+
+     *
+
+     * @param element MobileElement of element
+
+     */
+
+    public boolean elementIsDisplayed(MobileElement element) {
+
+        try {
+
+             element.isDisplayed();
+
+             return true;
+
+        } catch (Exception e){
+
+            return false;
+
+        }
+
+    }
 
 }
