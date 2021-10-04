@@ -5,6 +5,8 @@ import appium.Hooks;
 import io.appium.java_client.MobileElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import io.appium.java_client.TouchAction;
+import org.openqa.selenium.*;
 
 public class Commons extends AppiumController {
     
@@ -36,12 +38,12 @@ public class Commons extends AppiumController {
      */
     public void scrollDown() {
         try {
-            Dimension dimensions = appiumDriver.manage().window().getSize();
+            Dimension dimensions = driver.manage().window().getSize();
             double screenHeightStart = dimensions.getHeight() * 0.5;
             int scrollStart = (int) screenHeightStart;
             double screenHeightEnd = dimensions.getHeight() * 0.2;
             int scrollEnd = (int) screenHeightEnd;
-            TouchAction touchAction = new TouchAction(appiumDriver);
+            TouchAction touchAction = new TouchAction(driver);
             touchAction.longPress(PointOption.point(0, scrollStart)).moveTo(PointOption.point(0, scrollEnd)).release()
                     .perform();
         } catch (NullPointerException e) {
