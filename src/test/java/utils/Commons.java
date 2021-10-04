@@ -34,7 +34,6 @@ public class Commons extends AppiumController {
     
       /*
      * Automation method for scrolling down only
-     *
      */
     public void scrollDown() {
         try {
@@ -52,13 +51,8 @@ public class Commons extends AppiumController {
     }
     
      /*
-
      * Automation method for scroll only by Mobile Element
-
-     *
-
      * @param element MobileElement of element
-
      */
 
     public void scrollAndFindElement(MobileElement element) {
@@ -73,13 +67,8 @@ public class Commons extends AppiumController {
     }
     
     /*
-
      * Automation method to return boolean if the element is displayed
-
-     *
-
      * @param element MobileElement of element
-
      */
 
     public boolean elementIsDisplayed(MobileElement element) {
