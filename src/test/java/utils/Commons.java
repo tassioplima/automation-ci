@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import io.appium.java_client.TouchAction;
 import org.openqa.selenium.*;
+import io.appium.java_client.*;
 
 public class Commons extends AppiumController {
     
