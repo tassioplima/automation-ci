@@ -7,6 +7,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Commons extends AppiumController {
+    
+    public static final int DEFAULT_TIMEOUT = 25;
 
     public static void waitForVisibilityElement(MobileElement mobile) {
         WebDriverWait wait = new WebDriverWait(driver, 30);
