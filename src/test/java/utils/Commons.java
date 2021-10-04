@@ -28,6 +28,25 @@ public class Commons extends AppiumController {
         wait.until(ExpectedConditions.invisibilityOf(mobile));
     }
     
+      /*
+     * Automation method for scrolling down only
+     *
+     */
+    public void scrollDown() {
+        try {
+            Dimension dimensions = appiumDriver.manage().window().getSize();
+            double screenHeightStart = dimensions.getHeight() * 0.5;
+            int scrollStart = (int) screenHeightStart;
+            double screenHeightEnd = dimensions.getHeight() * 0.2;
+            int scrollEnd = (int) screenHeightEnd;
+            TouchAction touchAction = new TouchAction(appiumDriver);
+            touchAction.longPress(PointOption.point(0, scrollStart)).moveTo(PointOption.point(0, scrollEnd)).release()
+                    .perform();
+        } catch (NullPointerException e) {
+            fail(e.getMessage());
+        }
+    }
+    
      /*
 
      * Automation method for scroll only by Mobile Element
@@ -39,23 +58,14 @@ public class Commons extends AppiumController {
      */
 
     public void scrollAndFindElement(MobileElement element) {
-
         int limit = 0;
-
         while (!elementIsDisplayed(element)){
-
             limit ++;
-
             scrollDown();
-
             if (limit >= DEFAULT_SCROLL_COUNT){
-
                 break;
-
             }
-
         }
-
     }
     
     /*
@@ -69,19 +79,12 @@ public class Commons extends AppiumController {
      */
 
     public boolean elementIsDisplayed(MobileElement element) {
-
         try {
-
              element.isDisplayed();
-
              return true;
-
         } catch (Exception e){
-
             return false;
-
         }
-
     }
-
+  
 }
