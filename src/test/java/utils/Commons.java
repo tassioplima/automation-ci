@@ -1,13 +1,12 @@
 package utils;
 
 import appium.AppiumController;
-import appium.Hooks;
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import io.appium.java_client.TouchAction;
 import org.openqa.selenium.*;
-import io.appium.java_client.*;
 
 public class Commons extends AppiumController {
     
@@ -48,7 +47,7 @@ public class Commons extends AppiumController {
             touchAction.longPress(PointOption.point(0, scrollStart)).moveTo(PointOption.point(0, scrollEnd)).release()
                     .perform();
         } catch (NullPointerException e) {
-            fail(e.getMessage());
+            System.out.println(e.getMessage());
         }
     }
     
