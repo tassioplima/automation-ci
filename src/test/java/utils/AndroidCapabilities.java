@@ -14,7 +14,7 @@ public class AndroidCapabilities {
         caps.setCapability("build", "Automation");
         caps.setCapability("name", "Android");
         caps.setCapability("app", Utils.pathCapabilitie().getApps()[0]);
-        caps.setCapability("browserstack.video", false);
+        caps.setCapability("browserstack.video", true);
         caps.setCapability("browserstack.debug", true);
         return caps;
     }
@@ -27,7 +27,7 @@ public class AndroidCapabilities {
         caps.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, Utils.pathCapabilitieLocal().getAppActivity());
         caps.setCapability(MobileCapabilityType.UDID,Utils.pathCapabilitieLocal().getUdid() );
         caps.setCapability("app", Utils.pathCapabilitieLocal().getAppLocal()[0]);
-        caps.setCapability("browserstack.video", false);
+        caps.setCapability("browserstack.video", true);
         caps.setCapability("browserstack.debug", true);
         return caps;
     }
