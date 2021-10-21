@@ -19,6 +19,7 @@ Running:
 ./gradlew test --tests "Tests"
 ```
 
+
 You can run with different devices like iOS and Android using properties when running this command line:
 
 Android: 
