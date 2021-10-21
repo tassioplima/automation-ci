@@ -4,26 +4,26 @@
     "name" : "Tests",
     "children" : [ {
       "name" : "openStatistics",
-      "uid" : "cac1684e5b99168",
+      "uid" : "18ade837f03d1119",
       "parentUid" : "fc39173c9dc08e281c680147b63fcad9",
       "status" : "broken",
       "time" : {
-        "start" : 1628865247960,
-        "stop" : 1628865249420,
-        "duration" : 1460
+        "start" : 1634827507125,
+        "stop" : 1634827508982,
+        "duration" : 1857
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "newNote",
-      "uid" : "5ec0bec92886a340",
+      "uid" : "132fa4b1ceb7b1b9",
       "parentUid" : "fc39173c9dc08e281c680147b63fcad9",
       "status" : "broken",
       "time" : {
-        "start" : 1628865249524,
-        "stop" : 1628865250030,
-        "duration" : 506
+        "start" : 1634827509121,
+        "stop" : 1634827510010,
+        "duration" : 889
       },
       "flaky" : false,
       "newFailed" : false,

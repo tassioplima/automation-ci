@@ -1,3 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"broken","Fri Aug 13 14:34:09 GMT 2021","Fri Aug 13 14:34:10 GMT 2021","506","","Tests","","Tests","newNote","Creating new note",""
-"broken","Fri Aug 13 14:34:07 GMT 2021","Fri Aug 13 14:34:09 GMT 2021","1460","","Tests","","Tests","openStatistics","Open statistic",""
