@@ -3,7 +3,7 @@
   "key": "",
   "device": ["Google Pixel 3", "iPhone 11 Pro"],
   "os_version": ["9.0", "13"],
-  "apps" : ["bs://80c190855825ed0e665177b42a0a4f1d7a58c111" , "bs://444bd0308813ae0dc236f8cd461c02d3afa7901d"],
+  "apps" : ["bs://28415a10496f0c1d0b9437a8d5c0c9db396d2887" , "bs://444bd0308813ae0dc236f8cd461c02d3afa7901d"],
   "environments": [{
     "device": "Google Pixel 3",
     "os_version":  "9.0"
