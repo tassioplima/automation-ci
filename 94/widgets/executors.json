@@ -1,0 +1,10 @@
+[ {
+  "name" : "GitHub Actions",
+  "type" : "github",
+  "url" : "https://tassioplima.github.io/automation-ci",
+  "buildOrder" : 94,
+  "buildName" : "GitHub Actions Run #1472185024",
+  "buildUrl" : "https://github.com/tassioplima/automation-ci/actions/runs/1472185024",
+  "reportName" : "Allure Report with history",
+  "reportUrl" : "https://tassioplima.github.io/automation-ci/94/"
+} ]
