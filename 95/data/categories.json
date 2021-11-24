@@ -1,0 +1,43 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Unable to create a new remote session. Please check the server log for more details. Original error: [BROWSERSTACK_APP_DELETED] The app build specified in the 'app' capability in your test script has been recently deleted. We delete an uploaded app after 30 days from the day of upload. Please upload the app using REST API or BrowserStack CLI and try again. (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 876 milliseconds\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az167-870', ip: '10.1.0.22', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1021-azure', java.version: '1.8.0_312'\nDriver info: driver.version: AppiumDriver\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az167-870', ip: '10.1.0.22', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1021-azure', java.version: '1.8.0_312'\nDriver info: driver.version: AppiumDriver",
+      "children" : [ {
+        "name" : "Open statistic",
+        "uid" : "c48213cf74faea9c",
+        "parentUid" : "574465034ec31e6df7f65cc1d45cff07",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637748508125,
+          "stop" : 1637748509637,
+          "duration" : 1512
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "574465034ec31e6df7f65cc1d45cff07"
+    }, {
+      "name" : "Unable to create a new remote session. Please check the server log for more details. Original error: [BROWSERSTACK_APP_DELETED] The app build specified in the 'app' capability in your test script has been recently deleted. We delete an uploaded app after 30 days from the day of upload. Please upload the app using REST API or BrowserStack CLI and try again. (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 454 milliseconds\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az167-870', ip: '10.1.0.22', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1021-azure', java.version: '1.8.0_312'\nDriver info: driver.version: AppiumDriver\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az167-870', ip: '10.1.0.22', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1021-azure', java.version: '1.8.0_312'\nDriver info: driver.version: AppiumDriver",
+      "children" : [ {
+        "name" : "Creating new note",
+        "uid" : "d4698a29bc5d540f",
+        "parentUid" : "4a977f257548cb3865200c367b073209",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637748509795,
+          "stop" : 1637748510285,
+          "duration" : 490
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4a977f257548cb3865200c367b073209"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
