@@ -1,0 +1,35 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "Tests",
+    "children" : [ {
+      "name" : "Open statistic",
+      "uid" : "44fb5cce664b45c1",
+      "parentUid" : "902c53be0755ed2c5e3076a8d5ce2e49",
+      "status" : "broken",
+      "time" : {
+        "start" : 1642696164691,
+        "stop" : 1642696166274,
+        "duration" : 1583
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Creating new note",
+      "uid" : "c441995035af6014",
+      "parentUid" : "902c53be0755ed2c5e3076a8d5ce2e49",
+      "status" : "broken",
+      "time" : {
+        "start" : 1642696166396,
+        "stop" : 1642696166979,
+        "duration" : 583
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "902c53be0755ed2c5e3076a8d5ce2e49"
+  } ],
+  "name" : "suites"
+}
