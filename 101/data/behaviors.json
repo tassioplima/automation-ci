@@ -2,26 +2,26 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "children" : [ {
     "name" : "Open statistic",
-    "uid" : "6e1ddbd7924567d6",
+    "uid" : "12bb6c5ab2222c52",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "broken",
     "time" : {
-      "start" : 1631644295394,
-      "stop" : 1631644296689,
-      "duration" : 1295
+      "start" : 1642696184299,
+      "stop" : 1642696185696,
+      "duration" : 1397
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "Creating new note",
-    "uid" : "63f899452fa2bb25",
+    "uid" : "1f482ca7f0d44224",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "broken",
     "time" : {
-      "start" : 1631644296816,
-      "stop" : 1631644297267,
-      "duration" : 451
+      "start" : 1642696185826,
+      "stop" : 1642696186308,
+      "duration" : 482
     },
     "flaky" : false,
     "newFailed" : false,
