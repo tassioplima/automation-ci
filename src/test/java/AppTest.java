@@ -5,12 +5,12 @@ import org.junit.jupiter.api.Test;
 import screens.PageNote;
 import screens.PageStatistcs;
 
-public class Test extends Hooks{
+public class AppTest extends Hooks{
 
     public PageNote pageNote;
     public PageStatistcs pageStatic;
 
-    @Test
+    @org.junit.jupiter.api.Test
     @DisplayName("Creating new note")
     public void newNote() {
         pageNote = new PageNote(driver);
@@ -21,7 +21,7 @@ public class Test extends Hooks{
         Assertions.assertEquals("New note added", pageNote.validationStringNote());
     }
 
-    @Test
+    @org.junit.jupiter.api.Test
     @DisplayName("Open statistic")
     public void openStatistics() {
         pageStatic = new PageStatistcs(driver);

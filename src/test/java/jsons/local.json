@@ -1,6 +1,6 @@
 {
-  "appPackage": "com.example.android.testing.notes.mock",
-  "appActivity": "com.example.android.testing.notes.notes.NotesActivity",
-  "udid": "",
+  "appPackage": "com.sec.android.app.popupcalculator",
+  "appActivity": "com.sec.android.app.popupcalculator.Calculator",
+  "udid": "ce07182765cbb51a01",
   "appLocal": ["",""]
 }

@@ -12,7 +12,7 @@ public class TestWiki extends Hooks{
 
     @Test
     @DisplayName("Send information to Wikipedia")
-    public void newNote() {
+    public void newWiki() {
         pageWiki = new PageWiki(driver);
         pageWiki.clickWiki();
         pageWiki.sendInformation("BrowserStack");
