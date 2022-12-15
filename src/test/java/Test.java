@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import screens.PageNote;
 import screens.PageStatistcs;
 
-public class Tests1 extends Hooks{
+public class Test extends Hooks{
 
     public PageNote pageNote;
     public PageStatistcs pageStatic;

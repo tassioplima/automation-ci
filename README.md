@@ -18,7 +18,7 @@ Configuration:
 Running:
 
 ```
-./gradlew test --tests "Tests"
+./gradlew test --tests "Test"
 ```
 
 
@@ -27,26 +27,26 @@ You can run with different devices like iOS and Android using properties when ru
 Android: 
 
 ```
-./gradlew test --tests "Tests" -DMOBILE=ANDROID
+./gradlew test --tests "Test" -DMOBILE=ANDROID
 ```
 
 iOS: 
 
 ```
-./gradlew test --tests "Tests" -DMOBILE=iOS
+./gradlew test --tests "Test" -DMOBILE=iOS
 ```
 For use local user name by json or remote you can use Exec true or false:
 
 true = execution using environment variable from secret key
 
 ```
-./gradlew test --tests "Tests" -DMOBILE=ANDROID -DEXEC=true
+./gradlew test --tests "Test" -DMOBILE=ANDROID -DEXEC=true
 ```
 
 false = execution using json name and key from browser stack
 
 ```
-./gradlew test --tests "Tests" -DMOBILE=ANDROID -DEXEC=false
+./gradlew test --tests "Test" -DMOBILE=ANDROID -DEXEC=false
 ```
 
 Github Pages with Allure report results: [ALLURE](https://tassioplima.github.io/automation-ci/)

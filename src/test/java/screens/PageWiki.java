@@ -6,52 +6,28 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
-public class PageNote extends PageBase{
+public class PageWiki extends PageBase{
 
     private MobileDriver<MobileElement> driver;
 
-    public PageNote(AppiumDriver driver){
+    public PageWiki(AppiumDriver driver){
         super(driver);
     }
 
-    @AndroidFindBy(id = "fab_add_notes")
+    @AndroidFindBy(accessibility = "Search Wikipedia")
     @iOSXCUITFindBy(accessibility = "element")
-    private MobileElement createNote;
+    private MobileElement clickWiki;
 
-    @AndroidFindBy(id = "toolbar")
+    @AndroidFindBy(id = "org.wikipedia.alpha:id/search_src_text")
     @iOSXCUITFindBy(accessibility = "element")
-    private MobileElement toobarNewnote;
+    private MobileElement sendInformation;
 
-    @AndroidFindBy(id = "add_note_title")
-    @iOSXCUITFindBy(accessibility = "element")
-    private MobileElement addNote;
-
-    @AndroidFindBy(id = "fab_add_notes")
-    @iOSXCUITFindBy(accessibility = "element")
-    private MobileElement confirmationNote;
-
-    @AndroidFindBy(id = "note_detail_title")
-    @iOSXCUITFindBy(accessibility = "element")
-    private MobileElement detailNote;
-
-
-    public void createNewNode(){
-        createNote.click();
+    public void clickWiki(){
+        clickWiki.click();
     }
 
-    public void addNewNote(String value){
-        addNote.sendKeys(value);
+    public void sendInformation(String value){
+        sendInformation.sendKeys(value);
     }
 
-    public void confirmNote(){
-        confirmationNote.click();
-    }
-
-    public String validationStringNote(){
-        return detailNote.getText();
-    }
-
-    public boolean validationNotes(){
-        return detailNote.isDisplayed();
-    }
 }
