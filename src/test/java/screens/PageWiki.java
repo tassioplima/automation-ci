@@ -15,11 +15,11 @@ public class PageWiki extends PageBase{
     }
 
     @AndroidFindBy(accessibility = "Search Wikipedia")
-    @iOSXCUITFindBy(accessibility = "element")
+    @iOSXCUITFindBy(accessibility = "Text Button")
     private MobileElement clickWiki;
 
     @AndroidFindBy(id = "org.wikipedia.alpha:id/search_src_text")
-    @iOSXCUITFindBy(accessibility = "element")
+    @iOSXCUITFindBy(accessibility = "Text Input")
     private MobileElement sendInformation;
 
     public void clickWiki(){
@@ -28,6 +28,10 @@ public class PageWiki extends PageBase{
 
     public void sendInformation(String value){
         sendInformation.sendKeys(value);
+    }
+
+    public void validateButton() {
+        clickWiki.isDisplayed();
     }
 
 }
