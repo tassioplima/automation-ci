@@ -12,8 +12,7 @@ public class TestWiki extends Hooks{
     public void newWiki() {
         pageWiki = new PageWiki(driver);
         pageWiki.clickWiki();
-        pageWiki.sendInformation("BrowserStack");
-        pageWiki.validateButton();
+        pageWiki.sendInformation("hello@browserstack.com");
     }
 
 }
