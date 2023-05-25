@@ -78,11 +78,13 @@ local.properties
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
+/evidence/
 
 # Generated files
 .idea/**/contentModel.xml
 
 # Sensitive or high-churn files
+/.idea/
 .idea/**/dataSources/
 .idea/**/dataSources.ids
 .idea/**/dataSources.local.xml

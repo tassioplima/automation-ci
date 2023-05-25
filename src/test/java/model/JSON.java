@@ -11,6 +11,9 @@ public class JSON {
     private String [] apps;
     private String [] device;
     private String [] os_version;
+    private String [] appLocal;
+    private Environments[] environments;
+
 
     public String getUserName(){
         return name;
@@ -28,6 +31,10 @@ public class JSON {
         return apps;
     }
 
+    public Environments[] getEnvironment(){
+        return environments;
+    }
+
     public String [] getDevices(){
         return device;
     }
@@ -35,13 +42,20 @@ public class JSON {
     public String [] getOSVersions(){
         return os_version;
     }
+
     public String getAppPackage(){
         return appPackage;
     }
+
     public String getAppActivity(){
         return appActivity;
     }
+
     public String getUdid(){
         return udid;
+    }
+
+    public String [] getAppLocal(){
+        return appLocal;
     }
 }

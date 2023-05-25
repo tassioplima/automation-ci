@@ -6,38 +6,30 @@ import io.appium.java_client.AppiumDriver;
 
 import io.appium.java_client.MobileElement;
 import utils.AndroidCapabilities;
-import utils.Utils;
+import utils.Env;
 import utils.iOSCapabilities;
 
 public class AppiumController {
 
-    String mobile = System.getProperty("MOBILE");
-
-    public static final String AUTOMATE_USERNAME = System.getenv("BROWSERSTACK_USERNAME");
-    public static final String AUTOMATE_ACCESS_KEY = System.getenv("BROWSERSTACK_ACCESS_KEY") ;
-
-    public static String userName = Utils.pathToJSON().getUserName();
-    public static String accessKey = Utils.pathToJSON().getAccessKey();
-
-    public static final String server = "https://" + AUTOMATE_USERNAME + ":" + AUTOMATE_ACCESS_KEY + "@hub-cloud.browserstack.com/wd/hub";
+    public static final String server = "https://" + Env.AUTOMATE_USERNAME.getEnv() + ":" + Env.AUTOMATE_ACCESS_KEY.getEnv() + "@hub-cloud.browserstack.com/wd/hub";
     public static final String local = "http://127.0.0.1:4723/wd/hub";
 
     public static AppiumDriver driver;
 
     public void startAppium() throws Exception {
 
-        if (mobile.contains("ANDROID")){
-            if (Boolean.getBoolean("EXEC")){
+        if (Env.MOBILE.getEnv().equalsIgnoreCase("android")){
+            if (Env.BOOLENV.getBool()){
                 driver = new AppiumDriver<MobileElement>(new URL(server), AndroidCapabilities.getAndroidCapabilities());
             } else {
                 driver = new AppiumDriver<MobileElement>(new URL(local), AndroidCapabilities.getAndroidCapabilitiesLocal());
             }
 
-        } else if (mobile.contains("IOS")){
-            if (Boolean.getBoolean("EXEC")){
+        } else if (Env.MOBILE.getEnv().equalsIgnoreCase("ios")){
+            if (Env.BOOLENV.getBool()){
                 driver = new AppiumDriver<MobileElement>(new URL(server), iOSCapabilities.getIOSCapabilities());
             } else {
-                driver = new AppiumDriver<MobileElement>(new URL(local), iOSCapabilities.getIOSCapabilities());
+                driver = new AppiumDriver<MobileElement>(new URL(local), iOSCapabilities.getIOSCapabilitiesLocal());
             }
         }
 

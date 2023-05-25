@@ -1,0 +1,6 @@
+{
+  "appPackage": "com.sec.android.app.popupcalculator",
+  "appActivity": "com.sec.android.app.popupcalculator.Calculator",
+  "udid": "",
+  "appLocal": ["",""]
+}
