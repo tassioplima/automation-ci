@@ -4,7 +4,6 @@ Automation project with Java + Gradle on Browser Stack (Device Farm) and Github 
 
 [![Appium Execution](https://github.com/tassioplima/cocus/workflows/CI/badge.svg)](https://github.com/tassioplima/cocus/actions)
 [![Allure Report](https://img.shields.io/badge/Allure%20Report-deployed-yellowgreen)](https://tassioplima.github.io/automation-ci/)
-![Mutant AppTest](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Ftassioplima%2Fautomation-ci%2Fmain)
 
 Configuration: 
 
