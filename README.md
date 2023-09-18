@@ -15,36 +15,56 @@ Configuration:
 
 Running:
 
-```
+``` sh
 ./gradlew test --tests "AppTest"
 ```
-
 
 You can run with different devices like iOS and Android using properties when running this command line:
 
 Android: 
 
-```
+``` sh
 ./gradlew test --tests "AppTest" -DMOBILE=ANDROID
 ```
 
 iOS: 
 
-```
+``` sh
 ./gradlew test --tests "AppTest" -DMOBILE=iOS
 ```
-To use local user name by JSON or remote you can use Exec true or false:
 
-true = execution using environment variable from the secret key
+We have 3 possibilities for execution the tests locally, remotely or via device farm, setting the variable RUN to, local, remote or farm.
 
+local = execute locally on physical devices.
+remote = execute using variables from the GitHub Action, recommended for CI executions.
+farm =  you can execute setting some variables on remote.json and execute from you own computer to a device farm.
+
+Running on CI:
+
+``` sh
+./gradlew test --tests "AppTest" -DMOBILE=android -DRUN=remote
 ```
-./gradlew test --tests "AppTest" -DMOBILE=ANDROID -DEXEC=true
+
+Running locally:
+
+``` sh
+./gradlew test --tests "AppTest" -DMOBILE=android -DRUN=local
 ```
 
-false = execution using JSON name and key from browser stack
+Running on device farm:
 
-```
-./gradlew test --tests "AppTest" -DMOBILE=ANDROID -DEXEC=false
+``` sh
+./gradlew test --tests "AppTest" -DMOBILE=android -DRUN=farm
 ```
 
-GitHub Pages with Allure report results: [ALLURE](https://tassioplima.github.io/automation-ci/)
+### Building Allure report
+
+To build a report, and browse it use the following command:
+
+``` sh
+./gradlew allureServe
+```
+
+Github Pages with Allure report results: [ALLURE](https://tassioplima.github.io/miniSDK/)
+
+![img.png](img/img.png)
