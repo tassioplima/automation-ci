@@ -23,7 +23,8 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v2
         with:
-          java-version: 1.8
+          distribution: 'adopt'
+          java-version: '11'
 
       - name: Install dependencies
         run: ./gradlew compileTestJava
