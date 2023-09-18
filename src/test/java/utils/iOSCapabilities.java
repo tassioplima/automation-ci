@@ -1,10 +1,17 @@
 package utils;
 
-import io.appium.java_client.remote.AndroidMobileCapabilityType;
+import io.appium.java_client.ios.options.XCUITestOptions;
 import io.appium.java_client.remote.MobileCapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class iOSCapabilities {
+
+    public static XCUITestOptions getiOSXCUITestCap(){
+        XCUITestOptions xcuiTestOptions = new XCUITestOptions().setPlatformName("iOS").setAutomationName("XCUITest").amend("device",Utils.pathCapabilitie().getDevices()[1]).amend("os_version",Utils.pathCapabilitie().getOSVersions()[1]).
+                amend("project","iOS Project").amend("build","Automation").amend("name","iOS").
+                amend("app",Utils.pathCapabilitie().getApps()[1]).amend("deviceName",Utils.pathCapabilitie().getDevices()[1]);
+        return xcuiTestOptions;
+    }
 
     public static DesiredCapabilities getIOSCapabilities(){
         DesiredCapabilities caps = new DesiredCapabilities();
@@ -24,9 +31,6 @@ public class iOSCapabilities {
         caps.setCapability(MobileCapabilityType.PLATFORM_NAME,"iOS");
         caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "XCUITest");
         caps.setCapability(MobileCapabilityType.UDID,Utils.pathCapabilitieLocal().getUdid() );
-        caps.setCapability("app", Utils.pathCapabilitieLocal().getAppLocal()[1]);
-        caps.setCapability("browserstack.video", true);
-        caps.setCapability("browserstack.debug", true);
         return caps;
     }
 }

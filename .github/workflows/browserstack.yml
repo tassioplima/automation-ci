@@ -38,7 +38,7 @@ jobs:
         run: chmod +x gradlew
 
       - name: Build with Gradle
-        run: ./gradlew test --tests "TestWiki" -DMOBILE=iOS -DEXEC=true
+        run: ./gradlew test --tests "TestWiki" -DMOBILE=android -DRUN=remote
 
       - name: Get Allure history
         uses: actions/checkout@v2

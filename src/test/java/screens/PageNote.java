@@ -1,38 +1,40 @@
 package screens;
 
-import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileDriver;
-import io.appium.java_client.MobileElement;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.iOSXCUITFindBy;
+import org.openqa.selenium.WebElement;
 
 public class PageNote extends PageBase{
 
-    private MobileDriver<MobileElement> driver;
+    public PageNote(AndroidDriver androidDriver){
+        super(androidDriver);
+    }
 
-    public PageNote(AppiumDriver driver){
-        super(driver);
+    public PageNote(IOSDriver iosDriver){
+        super(iosDriver);
     }
 
     @AndroidFindBy(id = "fab_add_notes")
     @iOSXCUITFindBy(accessibility = "element")
-    private MobileElement createNote;
+    private WebElement createNote;
 
     @AndroidFindBy(id = "toolbar")
     @iOSXCUITFindBy(accessibility = "element")
-    private MobileElement toobarNewnote;
+    private WebElement toolbarNewnote;
 
     @AndroidFindBy(id = "add_note_title")
     @iOSXCUITFindBy(accessibility = "element")
-    private MobileElement addNote;
+    private WebElement addNote;
 
     @AndroidFindBy(id = "fab_add_notes")
     @iOSXCUITFindBy(accessibility = "element")
-    private MobileElement confirmationNote;
+    private WebElement confirmationNote;
 
     @AndroidFindBy(id = "note_detail_title")
     @iOSXCUITFindBy(accessibility = "element")
-    private MobileElement detailNote;
+    private WebElement detailNote;
 
 
     public void createNewNode(){

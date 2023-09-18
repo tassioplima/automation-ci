@@ -1,7 +1,7 @@
 package utils;
 
-import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import model.JSON;
 
 import java.io.File;

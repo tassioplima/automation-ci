@@ -8,6 +8,7 @@ public enum Env {
     AUTOMATE_ACCESS_KEY(System.getenv("BROWSERSTACK_ACCESS_KEY")),
     LOCAL_USERNAME(Utils.pathCapabilitie().getUserName()),
     LOCAL_ACCESS_KEY(Utils.pathCapabilitie().getAccessKey()),
+    RUN(System.getProperty("RUN")),
     ;
 
     private boolean bool;
