@@ -34,5 +34,4 @@ public class PageWiki extends PageBase{
     public void validateButton() {
         clickWiki.isDisplayed();
     }
-
 }
