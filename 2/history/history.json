@@ -1,1 +1,0 @@
-{"3fed97e2d8197ee485bac9d2c5c46cc7":{"statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1},"items":[{"uid":"e7542f3e3ab0e992","reportUrl":"https://tassioplima.github.io/automation-ci/2//#testresult/e7542f3e3ab0e992","status":"passed","time":{"start":1695029348863,"stop":1695029382844,"duration":33981}}]}}
