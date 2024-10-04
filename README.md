@@ -57,7 +57,7 @@ Running on device farm:
 ./gradlew test --tests "AppTest" -DMOBILE=android -DRUN=farm
 ```
 
-### Building Allure report
+### Building Allure report 
 
 To build a report, and browse it use the following command:
 
