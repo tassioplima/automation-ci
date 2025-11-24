@@ -1,4 +1,4 @@
-# Automation Project
+# Automation Project 
 
 Automation project with Java + Gradle on Browser Stack (Device Farm) and GitHub Action (CI) doing the remote mobile test, GithubPages to deploy Allure Serve to see test results, PageObject/Screen and PageFactory as a structure. 
 
