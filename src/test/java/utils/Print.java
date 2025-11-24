@@ -51,9 +51,12 @@ public class Print extends AppiumController {
             return new byte[0];
         }
         
-        // Determine which driver to use
-        TakesScreenshot driver = (androidDriver != null) ? androidDriver : iOSDriver;
-        return driver.getScreenshotAs(OutputType.BYTES);
+        // Use Android driver if available, otherwise iOS driver
+        if (androidDriver != null) {
+            return androidDriver.getScreenshotAs(OutputType.BYTES);
+        } else {
+            return iOSDriver.getScreenshotAs(OutputType.BYTES);
+        }
     }
 
 }
