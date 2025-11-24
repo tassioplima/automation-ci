@@ -7,7 +7,7 @@ Automation project with Java + Gradle on Browser Stack (Device Farm) and GitHub 
 
 Configuration: 
 
-- Java JDK 8 or 11
+- Java JDK 21 (LTS)
 - Android SDK updated
 - Android Emulator
 - Appium Server
