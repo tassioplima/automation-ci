@@ -13,12 +13,17 @@ import java.io.IOException;
 public class Print extends AppiumController {
 
     public static void takeScreenShot(TestInfo info) {
+        // Skip screenshot if driver is not initialized
+        if (androidDriver == null && iOSDriver == null) {
+            return;
+        }
+        
         try {
+            // Determine which driver to use
+            TakesScreenshot driver = (androidDriver != null) ? androidDriver : iOSDriver;
+            
             // Capture screenshot as a file
-            File scrFile = ((TakesScreenshot) androidDriver).getScreenshotAs(OutputType.FILE);
-
-            // Get the byte array of the screenshot
-            final byte[] screenshot = ((TakesScreenshot) androidDriver).getScreenshotAs(OutputType.BYTES);
+            File scrFile = driver.getScreenshotAs(OutputType.FILE);
 
             // Create a directory for storing screenshots if it doesn't exist
             File directory = new File("./evidence");
@@ -41,7 +46,14 @@ public class Print extends AppiumController {
 
     @Attachment(value = "Screenshot", type = "image/png")
     public static byte[] screenShot(){
-        return ((TakesScreenshot) androidDriver).getScreenshotAs(OutputType.BYTES);
+        // Skip screenshot if driver is not initialized
+        if (androidDriver == null && iOSDriver == null) {
+            return new byte[0];
+        }
+        
+        // Determine which driver to use
+        TakesScreenshot driver = (androidDriver != null) ? androidDriver : iOSDriver;
+        return driver.getScreenshotAs(OutputType.BYTES);
     }
 
 }
