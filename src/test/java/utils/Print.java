@@ -9,21 +9,21 @@ import org.openqa.selenium.OutputType;
 import java.io.File;
 import java.io.IOException;
 
-public class Print extends AppiumController {
+public class Print {
 
     public static void takeScreenShot(TestInfo info) {
         // Skip screenshot if driver is not initialized
-        if (androidDriver == null && iOSDriver == null) {
+        if (AppiumController.androidDriver == null && AppiumController.iOSDriver == null) {
             return;
         }
         
         try {
             File scrFile;
             // Capture screenshot from the appropriate driver
-            if (androidDriver != null) {
-                scrFile = androidDriver.getScreenshotAs(OutputType.FILE);
+            if (AppiumController.androidDriver != null) {
+                scrFile = AppiumController.androidDriver.getScreenshotAs(OutputType.FILE);
             } else {
-                scrFile = iOSDriver.getScreenshotAs(OutputType.FILE);
+                scrFile = AppiumController.iOSDriver.getScreenshotAs(OutputType.FILE);
             }
 
             // Create a directory for storing screenshots if it doesn't exist
@@ -50,16 +50,16 @@ public class Print extends AppiumController {
         byte[] result;
         
         // Skip screenshot if driver is not initialized
-        if (androidDriver == null && iOSDriver == null) {
+        if (AppiumController.androidDriver == null && AppiumController.iOSDriver == null) {
             result = new byte[0];
             return result;
         }
         
         // Use Android driver if available, otherwise iOS driver
-        if (androidDriver != null) {
-            result = androidDriver.getScreenshotAs(OutputType.BYTES);
+        if (AppiumController.androidDriver != null) {
+            result = AppiumController.androidDriver.getScreenshotAs(OutputType.BYTES);
         } else {
-            result = iOSDriver.getScreenshotAs(OutputType.BYTES);
+            result = AppiumController.iOSDriver.getScreenshotAs(OutputType.BYTES);
         }
         
         return result;
