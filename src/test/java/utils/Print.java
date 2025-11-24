@@ -5,7 +5,6 @@ import io.qameta.allure.Attachment;
 import org.apache.commons.io.*;
 import org.junit.jupiter.api.TestInfo;
 import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 
 import java.io.File;
 import java.io.IOException;
@@ -19,11 +18,13 @@ public class Print extends AppiumController {
         }
         
         try {
-            // Determine which driver to use
-            TakesScreenshot driver = (androidDriver != null) ? androidDriver : iOSDriver;
-            
-            // Capture screenshot as a file
-            File scrFile = driver.getScreenshotAs(OutputType.FILE);
+            File scrFile;
+            // Capture screenshot from the appropriate driver
+            if (androidDriver != null) {
+                scrFile = androidDriver.getScreenshotAs(OutputType.FILE);
+            } else {
+                scrFile = iOSDriver.getScreenshotAs(OutputType.FILE);
+            }
 
             // Create a directory for storing screenshots if it doesn't exist
             File directory = new File("./evidence");
