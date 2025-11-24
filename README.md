@@ -39,6 +39,13 @@ local = execute locally on physical devices.
 remote = execute using variables from the GitHub Action, recommended for CI executions.
 farm =  you can execute setting some variables on remote.json and execute from you own computer to a device farm.
 
+**Note:** For remote execution on device farm (farm mode), you need to update your BrowserStack credentials in `src/test/java/jsons/remote.json`:
+- `name`: Your BrowserStack username
+- `key`: Your BrowserStack access key
+- `device`: Device name (check available devices in your BrowserStack plan)
+- `os_version`: OS version
+- `apps`: Your app URL (upload app to BrowserStack and use the `bs://` URL)
+
 Running on CI:
 
 ``` sh
