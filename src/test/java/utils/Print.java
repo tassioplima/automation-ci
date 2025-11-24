@@ -27,7 +27,7 @@ public class Print extends AppiumController {
             }
 
             // Construct the file path with the test method name
-            String filePath = String.format("./evidence/%s.png", info.getDisplayName());
+            String filePath = "./evidence/%s.png".formatted(info.getDisplayName());
 
             // Save the screenshot with the specified file name
             FileUtils.copyFile(scrFile, new File(filePath));

@@ -1,5 +1,6 @@
 package appium;
 
+import java.net.URI;
 import java.net.URL;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
@@ -19,25 +20,25 @@ public class AppiumController {
         if (Env.MOBILE.getEnv().equalsIgnoreCase("android")) {
             switch(Env.RUN.getEnv()){
                 case "local":
-                    androidDriver = new AndroidDriver(new URL(local), AndroidCapabilities.getAndroidCapabilitiesLocal());
+                    androidDriver = new AndroidDriver(URI.create(local).toURL(), AndroidCapabilities.getAndroidCapabilitiesLocal());
                     break;
                 case "remote":
-                    androidDriver = new AndroidDriver(new URL(server), AndroidCapabilities.getAndroidUiAutomatorCap());
+                    androidDriver = new AndroidDriver(URI.create(server).toURL(), AndroidCapabilities.getAndroidUiAutomatorCap());
                     break;
                 case "farm":
-                    androidDriver = new AndroidDriver(new URL(farm), AndroidCapabilities.getAndroidUiAutomatorCap());
+                    androidDriver = new AndroidDriver(URI.create(farm).toURL(), AndroidCapabilities.getAndroidUiAutomatorCap());
                     break;
             }
         } else if (Env.MOBILE.getEnv().equalsIgnoreCase("ios")) {
             switch (Env.RUN.getEnv()) {
                 case "local":
-                    iOSDriver = new IOSDriver(new URL(local), iOSCapabilities.getIOSCapabilitiesLocal());
+                    iOSDriver = new IOSDriver(URI.create(local).toURL(), iOSCapabilities.getIOSCapabilitiesLocal());
                     break;
                 case "remote":
-                    iOSDriver = new IOSDriver(new URL(server), iOSCapabilities.getiOSXCUITestCap());
+                    iOSDriver = new IOSDriver(URI.create(server).toURL(), iOSCapabilities.getiOSXCUITestCap());
                     break;
                 case "farm":
-                    iOSDriver = new IOSDriver(new URL(farm), iOSCapabilities.getiOSXCUITestCap());
+                    iOSDriver = new IOSDriver(URI.create(farm).toURL(), iOSCapabilities.getiOSXCUITestCap());
                     break;
             }
         }
