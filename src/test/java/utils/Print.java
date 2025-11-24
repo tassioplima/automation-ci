@@ -47,17 +47,22 @@ public class Print extends AppiumController {
 
     @Attachment(value = "Screenshot", type = "image/png")
     public static byte[] screenShot(){
+        byte[] result;
+        
         // Skip screenshot if driver is not initialized
         if (androidDriver == null && iOSDriver == null) {
-            return new byte[0];
+            result = new byte[0];
+            return result;
         }
         
         // Use Android driver if available, otherwise iOS driver
         if (androidDriver != null) {
-            return androidDriver.getScreenshotAs(OutputType.BYTES);
+            result = androidDriver.getScreenshotAs(OutputType.BYTES);
         } else {
-            return iOSDriver.getScreenshotAs(OutputType.BYTES);
+            result = iOSDriver.getScreenshotAs(OutputType.BYTES);
         }
+        
+        return result;
     }
 
 }
