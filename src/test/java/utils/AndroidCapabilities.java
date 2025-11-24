@@ -10,14 +10,14 @@ import java.util.HashMap;
 public class AndroidCapabilities {
 
     public static UiAutomator2Options getAndroidUiAutomatorCap(){
-        UiAutomator2Options uiAutomator2Options = new UiAutomator2Options().setPlatformName("Android").setAutomationName("UiAutomator2").amend("device",Utils.pathCapabilitie().getDevices()[0]).amend("os_version",Utils.pathCapabilitie().getOSVersions()[0]).
+        UiAutomator2Options uiAutomator2Options = new UiAutomator2Options().setPlatformName("Android").setAutomationName("UiAutomator2").amend("deviceName",Utils.pathCapabilitie().getDevices()[0]).amend("os_version",Utils.pathCapabilitie().getOSVersions()[0]).
                 amend("project","Android Project").amend("build","Automation").amend("name","Android").
-                amend("app",Utils.pathCapabilitie().getApps()[0]).amend("deviceName",Utils.pathCapabilitie().getDevices()[0]);
+                amend("app",Utils.pathCapabilitie().getApps()[0]);
         return uiAutomator2Options;
     }
     public static DesiredCapabilities getAndroidCapabilities(){
         DesiredCapabilities caps = new DesiredCapabilities();
-        caps.setCapability("device", Utils.pathCapabilitie().getDevices()[0]);
+        caps.setCapability("deviceName", Utils.pathCapabilitie().getDevices()[0]);
         caps.setCapability("os_version", Utils.pathCapabilitie().getOSVersions()[0]);
         caps.setCapability("project", "Android Project");
         caps.setCapability("build", "Automation");
